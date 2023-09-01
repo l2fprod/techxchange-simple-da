@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "name": "techxchange-simple-da",
+      "label": "Simple deployable architecture",
+      "product_kind": "solution",
+      "version": "1.0.0",
+      "tags": [
+        "network_vpc",
+        "Technology"
+      ],
+      "keywords": [
+        "vpc"
+      ],
+      "short_description": "A simple deployable architecture",
+      "long_description": "A simple deployable architecture to use as a starting point and test things around.",
+      "offering_docs_url": "https://raw.githubusercontent.com/l2fprod/techxchange-simple-da/main/README.md",
+      "support_details": "This is a demonstration and no official support is given.",
+      "flavors": [
+        {
+          "label": "Standard",
+          "name": "techxchange-simple-da",
+          "install_type": "fullstack",
+          "licenses": [
+            {
+              "name": "Apache License 2.0",
+              "url": "https://raw.githubusercontent.com/l2fprod/techxchange-simple-da/main/LICENSE"
+            }
+          ],
+          "configuration": [
+            {
+              "key": "username",
+              "required": true
+            }
+          ],
+          "outputs": [
+          ],
+          "compliance": {
+            "authority": "scc-v3",
+            "controls": [
+              {
+                "profile": {
+                  "name": "IBM Cloud for Financial Services",
+                  "version": "1.4.0"
+                },
+                "names": [
+                  "ESA-3(0)"
+                ]
+              }
+            ]
+          },
+          "iam_permissions": [
+            {
+              "role_crns": [
+                "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+              ],
+              "service_name": "cloud-object-storage"
+            }
+          ],
+          "release_notes_url": "https://raw.githubusercontent.com/l2fprod/techxchange-simple-da/main/CHANGELOG.md",
+          "architecture": {
+            "diagrams": [
+              {
+                "diagram": {
+                  "caption": "Architecture diagram",
+                  "url": "https://raw.githubusercontent.com/l2fprod/techxchange-simple-da/main/xdocs/architecture.svg",
+                  "metadata": []
+                },
+                "description": "A simple deployable architecture."
+              },
+              {
+                "diagram": {
+                  "caption": "Terraform resources",
+                  "url": "https://raw.githubusercontent.com/l2fprod/techxchange-simple-da/main/xdocs/graph.svg",
+                  "metadata": []
+                },
+                "description": "A view of the Terraform constructs used within the deployable architecture."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
