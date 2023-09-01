@@ -4,7 +4,7 @@
       "name": "techxchange-simple-da",
       "label": "Simple deployable architecture",
       "product_kind": "solution",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "tags": [
         "network_vpc",
         "Technology"
